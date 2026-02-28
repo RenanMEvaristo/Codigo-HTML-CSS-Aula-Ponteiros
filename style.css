@@ -1,4 +1,4 @@
-/* Reset padrão para garantir que o layout ocupe a tela toda */
+
 * {
     margin: 0;
     padding: 0;
@@ -43,7 +43,7 @@ body {
     color: #cccccc;
 }
 
-/* --- ESTRUTURA GRID (O EMBRULHO) --- */
+/* ---(O EMBRULHO) --- */
 .embrulho {
     display: grid;
     grid-template-columns: 280px 1fr;
@@ -51,7 +51,7 @@ body {
     min-height: 100vh;
 }
 
-/* --- SIDEBAR (LISTA LATERAL) --- */
+/* --- SIDEBAR  --- */
 .sidebar {
     border-right: 8px solid var(--linha-vermelha);
     padding: 30px 20px;
