@@ -514,6 +514,35 @@
 
             </section>
 
+
+               <section id="feedback" class="aula-secao">
+                <h2>Avalie esta Aula</h2>
+                <p>Sua opinião é fundamental para melhorar este conteúdo didático!</p>
+
+                <!-- Substitua o link abaixo pelo link que você copiou do Formspree -->
+                <form action="https://formspree.io/f/mnjbkjpj" method="POST" class="form-feedback">
+
+                    <div class="campo">
+                        <label for="nota">Nota da Aula (0 a 10):</label>
+                        <input type="number" id="nota" name="nota" min="0" max="10" required placeholder="Ex: 10">
+                    </div>
+
+                    <div class="campo">
+                        <label for="comentario">O que você achou da explicação?</label>
+                        <textarea id="comentario" name="feedback" rows="5" required
+                            placeholder="Deixe seu comentário aqui..."></textarea>
+                    </div>
+
+                    <!-- Opcional: Campo para o e-mail do visitante se você quiser responder -->
+                    <div class="campo">
+                        <label for="email">Seu e-mail (opcional):</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com">
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Enviar Avaliação</button>
+                </form>
+            </section>
+
         </main>
 
 </body>
