@@ -195,3 +195,59 @@ b {
         top: 0;
     }
 }
+
+/* Estilização do Formulário de Feedback */
+.form-feedback {
+    background-color: var(--fundo-caixa);
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.campo {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    color: var(--texto-destaque);
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.campo input, 
+.campo textarea {
+    background-color: #000;
+    border: 1px solid #444;
+    color: white;
+    padding: 12px;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.campo input:focus, 
+.campo textarea:focus {
+    outline: none;
+    border-color: var(--linha-vermelha);
+}
+
+.btn-enviar {
+    background-color: var(--linha-vermelha);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: var(--texto-destaque);
+    color: black;
+}
