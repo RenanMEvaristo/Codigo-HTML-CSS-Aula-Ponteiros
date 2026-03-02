@@ -1,4 +1,4 @@
-
+/* Reset padrão para garantir que o layout ocupe a tela toda */
 * {
     margin: 0;
     padding: 0;
@@ -43,7 +43,7 @@ body {
     color: #cccccc;
 }
 
-/* ---(O EMBRULHO) --- */
+/* --- ESTRUTURA GRID (O EMBRULHO) --- */
 .embrulho {
     display: grid;
     grid-template-columns: 280px 1fr;
@@ -51,7 +51,7 @@ body {
     min-height: 100vh;
 }
 
-/* --- SIDEBAR  --- */
+/* --- SIDEBAR (LISTA LATERAL) --- */
 .sidebar {
     border-right: 8px solid var(--linha-vermelha);
     padding: 30px 20px;
@@ -171,29 +171,10 @@ body {
     border-radius: 4px;
 }
 
-/* --- DESTAQUES NO TEXTO --- */
+
 i,
 b {
     color: var(--texto-destaque);
-}
-
-
-
-/* --- RESPONSIVIDADE (Para Celular) --- */
-@media (max-width: 850px) {
-    .embrulho {
-        grid-template-columns: 1fr;
-    }
-
-    .sidebar {
-        border-right: none;
-        border-bottom: 8px solid var(--linha-vermelha);
-    }
-
-    .sidebar nav {
-        position: relative;
-        top: 0;
-    }
 }
 
 /* Estilização do Formulário de Feedback */
@@ -218,7 +199,7 @@ b {
     margin-bottom: 8px;
 }
 
-.campo input, 
+.campo input,
 .campo textarea {
     background-color: #000;
     border: 1px solid #444;
@@ -229,7 +210,7 @@ b {
     font-size: 1rem;
 }
 
-.campo input:focus, 
+.campo input:focus,
 .campo textarea:focus {
     outline: none;
     border-color: var(--linha-vermelha);
@@ -250,4 +231,21 @@ b {
 .btn-enviar:hover {
     background-color: var(--texto-destaque);
     color: black;
+}
+
+
+@media (max-width: 850px) {
+    .embrulho {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        border-right: none;
+        border-bottom: 8px solid var(--linha-vermelha);
+    }
+
+    .sidebar nav {
+        position: relative;
+        top: 0;
+    }
 }
